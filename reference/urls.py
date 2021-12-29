@@ -5,4 +5,5 @@ from reference import views
 
 urlpatterns = [
     path('', views.home,name="home"),
+    path('javascript', views.javascript,name="javascript"),
 ]
