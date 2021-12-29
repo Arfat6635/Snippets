@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+
+{% block title %}Javascript{% endblock title %}
+
+{% block body %}
+
+<!--javascript console-->
+
+<div class="container-fluid">
+    <p class="h5"><span class=" my-3 badge badge-warning">Console</span></p>
+    <p>In javascript, the console is an object which provides access to the browser debugging console</p>
+    <div class="container">
+        <pre>
+    <code class="language-JavaScript">
+ 
+        // => Hello world!
+        console.log('Hello world!');
+        
+        // => Hello QuickRef.ME
+        console.warn('hello %s', 'QuickRef.ME');
+        
+        // Prints error message to stderr
+        console.error(new Error('Oops!'));
+ 
+    </code>
+ </pre>
+    </div>
+ </div>
+
+
+ <!--javascript console end-->
+
+
+ <!--javascript Numbers-->
+
+<div class="container-fluid">
+    <p class="h5"><span class=" my-3 badge badge-warning">Numbers</span></p>
+    <p>JavaScript has only one type of number. Numbers can be written with or without decimals.</p>
+    <div class="container">
+        <pre>
+    <code class="language-JavaScript">
+ 
+        let amount = 6;
+let price = 4.99;
+ 
+    </code>
+ </pre>
+    </div>
+ </div>
+
+
+ <!--javascript number end-->
+
+ <!--javascript variables-->
+
+<div class="container-fluid">
+    <p class="h5"><span class=" my-3 badge badge-warning">Variables</span></p>
+    <p>Variables are containers for storing data (storing data values).</p>
+    <div class="container">
+        <pre>
+    <code class="language-JavaScript">
+ 
+        
+
+let x = null;
+let name = "Tammy";
+const found = false;
+
+// => Tammy, false, null
+console.log(name, found, x);
+
+var a;
+console.log(a); // => undefined
+
+
+ 
+    </code>
+ </pre>
+    </div>
+ </div>
+
+
+ <!--javascript variables end-->
+
+
+
+<!--javascript Strings-->
+
+<div class="container-fluid">
+    <p class="h5"><span class=" my-3 badge badge-warning">Strings</span></p>
+    <p>JavaScript strings are for storing and manipulating text.</p>
+    <div class="container">
+        <pre>
+    <code class="language-JavaScript">
+ 
+        
+
+        let single = 'Wheres my bandit hat?';
+        let double = "Wheres my bandit hat?";
+        
+        // => 21
+        console.log(single.length);
+
+
+ 
+    </code>
+ </pre>
+    </div>
+ </div>
+
+
+<!--javascript strings end-->
+
+<!--javascript Arithmetic operators-->
+
+<div class="container-fluid">
+    <p class="h5"><span class=" my-3 badge badge-warning">Arithmetic Operators</span></p>
+    <p>Arithmetic operators perform arithmetic on numbers (literals or variables).</p>
+    <div class="container">
+        <pre>
+    <code class="language-JavaScript"> 
+
+        5 + 5 = 10     // Addition
+        10 - 5 = 5     // Subtraction
+        5 * 10 = 50    // Multiplication
+        10 / 5 = 2     // Division
+        10 % 5 = 0     // Modulo
+ 
+    </code>
+ </pre>
+    </div>
+ </div>
+
+
+<!--javascript Arithmetic operators end-->
+
+
+<!--javascript Comments-->
+
+<div class="container-fluid">
+    <p class="h5"><span class=" my-3 badge badge-warning">Comments</span></p>
+    <p>JavaScript comments can be used to explain JavaScript code, and to make it more readable.</p>
+    <div class="container">
+        <pre>
+    <code class="language-JavaScript">
+        // This line will denote a comment
+
+/*  
+The below configuration must be 
+changed before deployment. 
+*/
+
+    </code>
+ </pre>
+    </div>
+ </div>
+
+
+<!--javascript strings end-->
+
+
+
+    {% endblock body %}
