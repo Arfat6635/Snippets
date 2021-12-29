@@ -1,122 +1,61 @@
 <!doctype html>
 <html lang="en">
   <head>
+      <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="/static/link.png" />
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--fontawesome-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+     <!--fontawesome-->
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--prism css for code highlighting-->
+
+    <link rel="stylesheet" href="/static/prism.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Cheatsheet</title>
+    <title>{% block title %}{% endblock title %}</title>
+    
   </head>
   <body>
-    
     <!--Navbar-->
 <nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
       <img src="/static/link.png" width="30" height="30" class="d-inline-block align-top" alt="">
       Cheatsheet
     </a>
   </nav>
 
-  <!--Navbar end-->
 
-  <!--Jumbotron-->
+  <!--jumbotron-->
 
-  <div class="jumbotron">
-    <h1 class="display-4">Cheatsheet</h1>
-    <p class="lead">Here are some cheatsheets for quick references 📝</p>
-    <hr class="my-4">
-    <p>This project is still under beta and will add more cheatsheets in the future</p>
-    
-   <a target="_blank" href="https://github.com/Arfat6635/cheatsheet/tree/master"> <button type="button" class="btn btn-rounded btn-dark"><i class="fab fa-github pr-2" aria-hidden="true"></i>@Arfat6635</button></a>
-  </div>
-
-  <!--Jumbotron end-->
-
-  <!--Topic Heading-->
-
-  <h1 class="display-4 mx-5">Topics</h1>
-
-  <hr/>
-
-  <!--Topic heading end-->
-
-  <!--Cheatsheet thumbnails-->
-
-  <div class="album py-5 bg-light">
+  <div style="text-align:center;" class="jumbotron jumbotron-fluid">
     <div class="container">
-
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4 box-shadow">
-            <button type="button" style="font-size: 30px;" class="btn btn-outline-danger"><i class="fab fa-github pr-4" aria-hidden="true"></i>Github</button>
-            
-          </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <button type="button" style="font-size: 30px;" class="btn btn-outline-primary"><i class="fab fa-js pr-4" aria-hidden="true"></i>Javascript</button>
-              
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <button type="button" style="font-size: 30px;" class="btn btn-outline-secondary"><i class="fab fa-python pr-4" aria-hidden="true"></i>Python</button>
-              
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <button type="button" style="font-size: 30px;" class="btn btn-outline-success"><i class="fab fa-html5 pr-4" aria-hidden="true"></i>Html</button>
-              
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <button type="button" style="font-size: 30px;" class="btn btn-outline-warning"><i class="fab fa-java pr-4" aria-hidden="true"></i>Java</button>
-              
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <button type="button" style="font-size: 30px;" class="btn btn-outline-info"><i class="fas fa-terminal pr-4" aria-hidden="true"></i>Linux Terminal</button>
-              
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <button type="button" style="font-size: 30px;" class="btn btn-outline-dark"><i class="fab fa-css3-alt pr-4" aria-hidden="true"></i>CSS</button>
-              
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <button type="button" style="font-size: 30px;" class="btn btn-outline-danger"><i class="fab fa-cuttlefish pr-4" aria-hidden="true"></i>C programming</button>
-              
-            </div>
-          </div>    
-        <div class="col-md-4">
-          <div class="card mb-4 box-shadow">
-            <button type="button" style="font-size: 30px;border: 1px solid black;" class="btn btn-light"><i class="fab fa-php pr-4" aria-hidden="true"></i>PHP</button>
-            
-          </div>
-        </div>
-      </div>
+      <h1 class="display-4">{{Topic}}</h1>
+      <p class="lead">{{Topic_Message}}</p>
     </div>
   </div>
 
 
-  <!--Cheatsheet thumbnails end-->
+  <!--jumbotron end-->
 
-  <!--footer start-->
+   <!--Topic Heading-->
 
-  <footer class="py-3 my-4">
+   <h1 class="display-4">{{Topic_Start}}</h1>
+   
+  <hr>
+ 
+   <!--Topic heading end-->
+
+
+
+  {% block body %}{% endblock body %}
+
+   <!--footer start-->
+
+   <footer class="py-3 my-4">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li style="text-align: center;" class="nav-item" ><i class="fab fa-github fa-2x pr-2 "  aria-hidden="true"></i><a href="https://github.com/Arfat6635" target="_blank"  class="nav-link text-muted">@Arfat6635</a></li>
     </ul>
@@ -125,8 +64,10 @@
 
   <!--footer end-->
 
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/static/prism.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
