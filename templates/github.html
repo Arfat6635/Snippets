@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block title %}Github{% endblock title %}
+
+{% block body %}
+
+<!--Create a new local repository-->
+
+<div class="container-fluid">
+    <p class="h5"><span class=" my-3 badge badge-warning">Github repo</span></p>
+    <p>Create a new local repository</p>
+    <div class="container">
+        <pre>
+    <code class="language-github">
+
+        $ git init [project name]
+
+    </code>
+ </pre>
+    </div>
+ </div>
+
+
+<!--Create a new local repository-->
+
+<!--Clone a repository-->
+
+<div class="container-fluid">
+    <p class="h5"><span class=" my-3 badge badge-warning">Clone a repository</span></p>
+    <div class="container">
+        <pre>
+    <code class="language-github">
+
+        $ git clone git_url
+    </code>
+ </pre>
+    </div>
+ </div>
+
+
+<!--Clone a repository-->
+
+
+<!--Git status-->
+
+<div class="container-fluid">
+    <p class="h5"><span class=" my-3 badge badge-warning">Git status</span></p>
+    <p>Show modified files in working directory, staged for your next commit</p>
+    <div class="container">
+        <pre>
+    <code class="language-github">
+
+        $ git status
+    </code>
+ </pre>
+    </div>
+ </div>
+
+
+<!--Git status-->
+
+
+
+<!--Git stage-->
+
+<div class="container-fluid">
+    <p class="h5"><span class=" my-3 badge badge-warning">Add file to the stage</span></p>
+    <p>Stages the file, ready for commit</p>
+    <div class="container">
+        <pre>
+    <code class="language-github">
+
+        $ git add [file]
+    </code>
+ </pre>
+    </div>
+ </div>
+
+
+<!--Git stage-->
+
+<!--Git Commit-->
+
+<div class="container-fluid">
+    <p class="h5"><span class=" my-3 badge badge-warning">Git commit</span></p>
+    <p>Commit all staged files to versioned history</p>
+    <div class="container">
+        <pre>
+    <code class="language-github">
+
+        $ git commit -m "commit message"
+    </code>
+ </pre>
+    </div>
+ </div>
+
+
+<!--Git Commit-->
+
+
+{% endblock body%}

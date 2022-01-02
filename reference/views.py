@@ -24,3 +24,11 @@ def python(request):
     }
     return render(request,"python.html",python_context)
 
+def github(request):
+    github_context={
+        "Topic":"Github",
+        "Topic_Message":"This cheat sheet summarizes commonly used Git command line instructions for quick reference.",
+        "Topic_Start":"Getting Started"
+    }
+    return render(request, "github.html",github_context)
+
