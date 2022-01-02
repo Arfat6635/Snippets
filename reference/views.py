@@ -18,7 +18,7 @@ def javascript(request):
 
 def python(request):
     python_context = {
-        "Topic": "Pyhton",
+        "Topic": "Python",
         "Topic_Message": "The Python cheat sheet is a one-page reference sheet for the Python programming language..",
         "Topic_Start": "Getting Started",
     }

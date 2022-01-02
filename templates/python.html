@@ -1,3 +1,114 @@
 {% extends 'base.html' %}
 
 {% block title %}Python{% endblock title %}
+
+{% block body %}
+
+<!--Python Hello world-->
+
+
+<div class="container-fluid">
+    <p class="h5"><span class=" my-3 badge badge-warning">Hello world</span></p>
+    <p>The print() function prints the specified message to the screen, or other standard output device.</p>
+    <div class="container">
+        <pre>
+    <code class="language-python">
+
+        >>> print("Hello, World!")
+        Hello, World!
+
+    </code>
+ </pre>
+    </div>
+ </div>
+
+<!--Python hello world end-->
+
+
+<!--Python variables-->
+
+<div class="container-fluid">
+    <p class="h5"><span class=" my-3 badge badge-warning">Variables</span></p>
+    <p>Variables are containers for storing data values.</p>
+    <div class="container">
+        <pre>
+    <code class="language-python">
+        age = 18      # age is of type int
+        name = "John" # name is now of type str
+        print(name)
+
+    </code>
+ </pre>
+    </div>
+ </div>
+
+<!--Python variables end-->
+
+<!--Python Data Types-->
+
+<div class="container-fluid">
+    <p class="h5"><span class=" my-3 badge badge-warning">Python Data types</span></p>
+    <p>Python has the following data types built-in by default, in these categories:</p>
+    <div class="container">
+        <pre>
+    <code class="language-python">
+        str - Text
+        int, float, complex - Numeric
+        list, tuple, range - Sequence
+        dict - Mapping
+        set, frozenset - Set
+        bool - Boolean
+        bytes, bytearray, memoryview - Binary
+
+    </code>
+ </pre>
+    </div>
+ </div>
+
+<!--Python Data Types end-->
+
+<!--Python slicing strings-->
+
+<div class="container-fluid">
+    <p class="h5"><span class=" my-3 badge badge-warning">Python Slicing</span></p>
+    <p>Python slicing is about obtaining a sub-string from the given string by slicing it respectively from start to end.</p>
+    <div class="container">
+        <pre>
+    <code class="language-python">
+        >>> msg = "Hello, World!"
+        >>> print(msg[2:5])
+        llo
+
+
+    </code>
+ </pre>
+    </div>
+ </div>
+
+<!--Python end of slicing strings-->
+
+<!--Python list-->
+
+<div class="container-fluid">
+    <p class="h5"><span class=" my-3 badge badge-warning">Python list</span></p>
+    <p>Lists are used to store multiple items in a single variable.</p>
+    <div class="container">
+        <pre>
+    <code class="language-python">
+        mylist = []
+        mylist.append(1)
+        mylist.append(2)
+        for item in mylist:
+            print(item) # prints out 1,2
+
+    </code>
+ </pre>
+    </div>
+ </div>
+
+<!--Python list end-->
+
+
+
+
+{% endblock body %}
