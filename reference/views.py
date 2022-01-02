@@ -8,9 +8,19 @@ def home(request):
 
     
 def javascript(request):
-    context={
+    javascript_context={
         "Topic":"Javascript",
         "Topic_Message":"The Javascript cheat sheet is a one-page reference sheet for the javascript programming language.",
         "Topic_Start":"Getting Started",
     }
-    return render(request,"javascript.html",context)
+    return render(request,"javascript.html",javascript_context)
+
+
+def python(request):
+    python_context = {
+        "Topic": "Pyhton",
+        "Topic_Message": "The Python cheat sheet is a one-page reference sheet for the Python programming language..",
+        "Topic_Start": "Getting Started",
+    }
+    return render(request,"python.html",python_context)
+
